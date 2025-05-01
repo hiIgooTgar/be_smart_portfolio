@@ -21,14 +21,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="logo">
         <a href="">Astha.</a>
       </div>
-      <div class="nav-menu">
-        <a href="#ero" class="nav-list">Home</a>
-        <a href="#projects" class="nav-list">Projects</a>
-        <a href="#about" class="nav-list">About</a>
+      <div class="nav-menu" id="nav-menu">
+          <a href="#ero" class="nav-list">Home</a>
+          <a href="#projects" class="nav-list">Projects</a>
+          <a href="#about" class="nav-list">About</a>
+          <i onclick="hideMenu()" class="fas fa-times"></i>
+        </div>
+      <div class="nav-extra">
+        <i class="fas fa-bars" onclick="showMenu()" id="hamburger"></i>
       </div>
     </nav>
 
@@ -223,5 +227,7 @@
         <p>&copy; 2025 Astha. All Rights Reserved</p>
       </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
