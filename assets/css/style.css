@@ -144,6 +144,7 @@
 }
 
 .hero .hero-left .social-media .line {
+  margin-top: 1.2px;
   height: 1.25px;
   width: 100%;
   background: #ccc;
@@ -202,7 +203,7 @@
 .projects .projects-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.4rem;
+  gap: 1.5rem;
 }
 
 .projects .projects-row .project-box {
@@ -409,13 +410,34 @@ footer .copyright p {
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero .hero-right {
+    flex: 1 1 100%;
+  }
+
+  .hero .hero-left {
+    flex: 1 1 100%;
+  }
+
+  .projects .projects-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 576px) {
+  .navbar {
+    box-shadow: 0 0.5px 1px rgba(0, 0, 0, 0.1);
+  }
+
   .navbar .nav-menu {
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 4.5rem;
-    right: -230px;
+    top: 6rem;
+    right: -240px;
     background: rgba(255, 255, 255, 1);
     padding: 3rem 0;
     width: 230px;
@@ -424,7 +446,7 @@ footer .copyright p {
   }
 
   .navbar .nav-menu .nav-list:first-child {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .navbar .nav-menu .nav-list {
